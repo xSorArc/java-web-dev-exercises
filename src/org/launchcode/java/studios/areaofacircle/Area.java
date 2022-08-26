@@ -5,13 +5,9 @@ import java.util.Scanner;
 public class Area {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         System.out.println("Enter a radius: ");
-        String r = input.next();
 
-//        if (Double.isNaN(Double.parseDouble(r))) {
-//
-//        }
+        String r = input.next();
 
         while (Double.valueOf(r) < 0) {     // Prevents negative number input.
             System.err.println("Radius must be a positive number.");
