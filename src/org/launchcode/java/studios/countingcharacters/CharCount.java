@@ -14,7 +14,7 @@ public class CharCount {
                 "Once you’ve done that, it’s pretty straightforward from there.";
 
 //        cCount(hiddenFigures);
-        cCount(userString.toLowerCase());
+        cCount(userString.toLowerCase().replaceAll("[^a-zA-z]", ""));  // Still able to use " ^ ".
     }
 
     public static HashMap cCount(String str) {
