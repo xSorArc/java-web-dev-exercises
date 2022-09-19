@@ -7,7 +7,7 @@ public abstract class Ingredient {
     private double cost;
     private ArrayList<String> allergens;
 
-    public Ingredient(String aName, double aCost, ArrayList<String> someAllergens){
+    public Ingredient(String aName, double aCost, ArrayList<String> someAllergens) {
         name = aName;
         cost = aCost;
         allergens = someAllergens;
@@ -40,7 +40,7 @@ public abstract class Ingredient {
     @Override
     public String toString() {
         return "Name: " + name + "\n" +
-                "Cost: $" + cost + "\n" +
-                "Allergens: " + allergens + "\n";
+                "\tCost: $" + cost + "\n" +
+                "\tAllergens: " + allergens + "\n";
     }
 }
